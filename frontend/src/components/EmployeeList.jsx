@@ -58,7 +58,7 @@ const EmployeeList = () => {
 
   const getDepartmentName = (departmentId) => {
     const department = departments.find(dept => dept.id === departmentId);
-    return department;
+    return department ? department.name : 'Unknown';
   };
 
   const handleCloseDialog = () => {
