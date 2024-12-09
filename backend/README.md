@@ -8,7 +8,7 @@
     name VARCHAR(255) NOT NULL,
     status ENUM('active', 'inactive') DEFAULT 'active',
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMPis modified
+    modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
