@@ -3,7 +3,7 @@
 
 ## department
 ``` 
- CREATE TABLE Department (
+ CREATE TABLE department (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     status ENUM('active', 'inactive') DEFAULT 'active',
@@ -14,7 +14,7 @@
 
 ## Departments
 ```
-INSERT INTO Department (name, status) VALUES 
+INSERT INTO department (name, status) VALUES 
 ('HR', 'active'),
 ('Engineering', 'active'),
 ('Marketing', 'inactive');
@@ -22,7 +22,7 @@ INSERT INTO Department (name, status) VALUES
 
 ## employee
 ```
-CREATE TABLE Employee (
+CREATE TABLE employee (
     id INT AUTO_INCREMENT PRIMARY KEY,
     department_id INT,
     name VARCHAR(255) NOT NULL,
