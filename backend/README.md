@@ -34,6 +34,6 @@ CREATE TABLE employee (
     status ENUM('active', 'inactive') DEFAULT 'active',
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (department_id) REFERENCES Department(id)
+    FOREIGN KEY (department_id) REFERENCES department(id)
 );
 ```
